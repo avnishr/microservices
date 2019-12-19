@@ -40,3 +40,8 @@ gsutil rm -r gs://${BUCKET_NAME}
 ```
 
 As an alternative to the command line, you can delete the various resources using the GCP Console.
+
+
+# Setting up a sample MNIST program 
+
+https://www.kubeflow.org/docs/gke/pipelines-tutorial/
