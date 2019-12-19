@@ -15,14 +15,15 @@ gcloud container clusters get-credentials \
 
 Switch to the kubeflow namespace to see the resources on the Kubeflow cluster:
 
-
+```
 kubectl config set-context $(kubectl config current-context) --namespace=kubeflow
-
+````
 
 Check the resources deployed in the kubeflow namespace:
 
-
+```
 kubectl get all
+```
 
 
 # Cleaning up GCP resources
