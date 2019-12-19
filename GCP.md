@@ -6,9 +6,10 @@ If you want to examine your cluster while waiting for the Kubeflow dashboard to 
 
 Connect your Cloud Shell session to the cluster:
 
-gcloud container clusters get-credentials \\
+```gcloud container clusters get-credentials \\
 
   ${DEPLOYMENT_NAME} --zone ${ZONE} --project ${PROJECT}
+```
 
 Switch to the kubeflow namespace to see the resources on the Kubeflow cluster:
 
