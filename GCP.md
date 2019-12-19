@@ -2,6 +2,12 @@
 
 # Examining Kubeflow cluster
 
+Once the kubeflow cluster comes up, we can find out the external ip address (URL) 
+
+```
+kubectl -n istio-system get ingress
+```
+
 If you want to examine your cluster while waiting for the Kubeflow dashboard to be available, you can use kubectl to connect to your cluster:
 
 Connect your Cloud Shell session to the cluster:
