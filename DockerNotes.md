@@ -7,3 +7,6 @@ docker image ls
 docker run 13f33a9d70e0
 
 docker logs -f festive_sinoussi
+
+List of docker containers 
+docker ps -aq
