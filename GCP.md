@@ -51,3 +51,7 @@ As an alternative to the command line, you can delete the various resources usin
 # Setting up a sample MNIST program 
 
 https://www.kubeflow.org/docs/gke/pipelines-tutorial/
+
+# Kubeflow sample github code
+https://github.com/kubeflow/examples
+
