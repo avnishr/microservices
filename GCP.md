@@ -36,6 +36,29 @@ kubectl get all
 
 Run the following command to delete your deployment and related resources:
 
+
+# How to run a docker model with tensor flow
+docker run -p 8501:8501 --mount type=bind,source=/tmp/model,target=/models/mnist2 -e MODEL_NAME=mnist2 --name mnist2 -t tensorflow/serving
+
+# How to query the model using HTTP
+The following code snippet can be used 
+
+import sys
+import json
+import requests
+from keras.datasets import fashion_mnist
+
+
+def get_prediction(server_host='127.0.0.1', server_port=9000):
+    (trainX, trainy), (testX, testy) = fashion_mnist.load_data()
+    testX = testX / 255
+    testX = testX.reshape(testX.shape[0], 28, 28, 1)
+    data = json.dumps({"signature_name": "serving_default", "instances": testX[0:3].tolist()})
+    headers = {"content-type": "application/json"}
+    json_response = requests.post('http://localhost:8501/v1/models/mnist2:predict', data=data, headers=headers)
+    print(json_response)
+    
+    
 ```
 gcloud deployment-manager --project=${PROJECT} deployments delete ${DEPLOYMENT_NAME}
 ```
