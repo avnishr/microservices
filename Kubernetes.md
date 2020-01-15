@@ -22,3 +22,11 @@ kubectl get pod
 kubectl get pod <name of pod> -o wide|json|yaml
 
 kubectl describe pod <name of pod>
+
+2. Running commands inside the shell on that pod
+
+kubectl exec -it <name of pod> -- /bin/sh
+  
+3. Delete the pod that we created
+
+kubectl delete pod <name of the pod>
