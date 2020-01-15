@@ -13,3 +13,12 @@
 
 1. Ensure a min number of instances of a deployment are always running 
 
+## Pods
+
+1. Get the pod status 
+
+kubectl get pod
+
+kubectl get pod <name of pod> -o wide|json|yaml
+
+kubectl describe pod <name of pod>
