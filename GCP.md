@@ -78,3 +78,7 @@ https://www.kubeflow.org/docs/gke/pipelines-tutorial/
 # Kubeflow sample github code
 https://github.com/kubeflow/examples
 
+
+docker run -p 8501:8501 --mount type=bind,source=/tmp/model,target=/models/mnist2 -e MODEL_NAME=mnist2 --name mnist2 -t tensorflow/serving
+
+
