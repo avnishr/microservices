@@ -12,7 +12,15 @@ kubectl get events --sort-by=.metadata.creationTimestamp
 
 1. Docker Bench Security 
 
-2. Run Docker containers as non root user
+2. Run Docker containers as non root user - 
+
+RUN groupadd -r newuser && useradd -r -s
+/bin/false -g newuser newuser
+RUN chown -R newuser:newuser /app
+
+USER newuser
+
+Migrate to Docker 20 - rootless docker
 
 3. Limits on resource usages 
 
