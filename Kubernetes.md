@@ -23,6 +23,13 @@ USER newuser
 
 Migrate to Docker 20 - rootless docker
 
+configure ur docker run with -nonewprivileges flag
+
+```
+docker run -it --rm --user=1000 --security-opt=no-new-privileges testnnp
+```
+https://www.projectatomic.io/blog/2016/03/no-new-privs-docker/
+
 3. Limits on resource usages 
 
 4. Scan Docker Images and Sign the Images with Signatures.  - Docker Bench, CLI "docker scan", Falco
