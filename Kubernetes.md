@@ -3,6 +3,20 @@
 List down the events in the kubernetes cluster with timestamp
 kubectl get events --sort-by=.metadata.creationTimestamp
 
+kubectl get componentstatuses
+
+will provide all the components of the master along with their statuses
+
+```
+avrastog@cloudshell:~ (dais-data-dev-txwj)$ kubectl get componentstatuses
+NAME                 STATUS    MESSAGE             ERROR
+etcd-0               Healthy   {"health":"true"}
+scheduler            Healthy   ok
+controller-manager   Healthy   ok
+etcd-1               Healthy   {"health":"true"}
+avrastog@cloudshell:~ (dais-data-dev-txwj)$
+
+```
 # Microservices
 
 
