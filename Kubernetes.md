@@ -10,6 +10,9 @@ kubectl get events --sort-by=.metadata.creationTimestamp
 
 [A good youtube video series](https://www.youtube.com/watch?v=_3NUI5vasPk&list=PLMPZQTftRCS8Pp4wiiUruly5ODScvAwcQ)
 
+Docker Bench Security 
+
+Run Docker containers as non root user
 
 ## Create a deployment 
 
