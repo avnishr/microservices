@@ -16,7 +16,7 @@ kubectl get events --sort-by=.metadata.creationTimestamp
 
 3. Limits on resource usages 
 
-4. Scan Docker Images and Sign the Images with Signatures. 
+4. Scan Docker Images and Sign the Images with Signatures.  - Docker Bench, CLI "docker scan", Falco
 
 ## Create a deployment 
 
