@@ -1,3 +1,8 @@
+# Kubernetes 
+
+List down the events in the kubernetes cluster with timestamp
+kubectl get events --sort-by=.metadata.creationTimestamp
+
 # Microservices
 
 
