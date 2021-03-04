@@ -10,9 +10,13 @@ kubectl get events --sort-by=.metadata.creationTimestamp
 
 [A good youtube video series](https://www.youtube.com/watch?v=_3NUI5vasPk&list=PLMPZQTftRCS8Pp4wiiUruly5ODScvAwcQ)
 
-Docker Bench Security 
+1. Docker Bench Security 
 
-Run Docker containers as non root user
+2. Run Docker containers as non root user
+
+3. Limits on resource usages 
+
+4. Scan Docker Images and Sign the Images with Signatures. 
 
 ## Create a deployment 
 
